@@ -1,7 +1,8 @@
-const csvFilePath='./IPL-dataset/deliveries.csv'
-const csv=require('csvtojson')
+const csv = require("csvtojson");
+const csvFilePath = "./IPL-dataset/matches.csv";
 csv()
-.fromFile(csvFilePath)
-.then((jsonObj)=>{
-    
-})
+  .fromFile(csvFilePath)
+  .then(matches => {
+    /*Second Function*/
+    matchesWonPerTeamPerYear(matches);
+  });
