@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage",
+    "ipl": "node index.js",
+    "start": "http-server"
   },
   "author": "",
   "license": "ISC",
