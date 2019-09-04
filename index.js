@@ -1,12 +1,12 @@
 const csv=require('csvtojson')
 const csvFilePath='./IPL-dataset/matches.csv'
-const MatchesPerYear=require('./ipl/matchesPerYear')
+const matchesPerYear=require('./ipl/matchesPerYear')
 
 csv()
 .fromFile(csvFilePath)
-.then((Matches)=>{
+.then((matches)=>{
     /*First Function*/
-let matchesPerYearResult = MatchesPerYear(Matches);
+let matchesPerYearResult = MatchesPerYear(matches);
 console.log(matchesPerYearResult)
 
 })
