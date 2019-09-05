@@ -17,6 +17,7 @@ function matchesWonPerTeamPerYear(matches) {
 
     return finalResult;
   }
+  module.exports = matchesWonPerTeamPerYear;
 
 // function matchesWonPerTeamPerYear(matches) {
 //   const finalResult = {};
@@ -36,4 +37,4 @@ function matchesWonPerTeamPerYear(matches) {
 //     return finalResult;
 //   });
 //}
-module.exports = matchesWonPerTeamPerYear;
+
