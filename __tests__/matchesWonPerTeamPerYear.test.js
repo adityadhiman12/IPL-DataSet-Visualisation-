@@ -1,6 +1,6 @@
 const matchesWonPerTeamPerYear = require("../ipl/matchesWonPerTeamPerYear");
 
-let testMatch = [
+let testMatches = [
   {
     id: "95",
     season: "2008",
