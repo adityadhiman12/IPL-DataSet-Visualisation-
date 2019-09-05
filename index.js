@@ -13,10 +13,10 @@ csv()
   .then(matches => {
     /*First Function*/
     // let matchesPerYearResult = matchesPerYear(matches);
+    // console.log(matchesPerYearResult);
+    
     /*Second Function*/
     // let matchesWonPerTeamPerYearResult = matchesWonPerTeamPerYear(matches);
-
-    // console.log(matchesPerYearResult);
     // console.log(matchesWonPerTeamPerYearResult);
 
     /*Third Function*/
