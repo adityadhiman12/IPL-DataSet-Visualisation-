@@ -6,6 +6,8 @@ csv()
   .then(matches => {
     /*Second Function*/
    let matchesWonPerTeamPerYearResult= matchesWonPerTeamPerYear(matches);
-   console.log(matchesWonPerTeamPerYearResult);
+  //  console.log(matchesWonPerTeamPerYearResult);
+
+   console.log(matches);
   });
 
