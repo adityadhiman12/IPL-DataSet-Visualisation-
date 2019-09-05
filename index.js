@@ -5,6 +5,8 @@ const csvFilePath_2 = "./IPL-dataset/deliveries.csv";
 const matchesPerYear = require("./ipl/matchesPerYear.js");
 const matchesWonPerTeamPerYear = require("./ipl/matchesWonPerTeamPerYear.js");
 const extraRunsConceeded = require("./ipl/extraRunsConceeded.js");
+const top10EcoBowlers=require("./ipl/top10EcoBowlers.js");
+
 
 csv()
   .fromFile(csvFilePath)
@@ -23,7 +25,9 @@ csv()
       .then(deliveries => {
         let extraRunsConceededResult = extraRunsConceeded(matches, deliveries);
         // console.log(extraRunsConceededResult);
-        console.log(deliveries);
+        // console.log(deliveries);
+        let top10EcoBowlersResult=top10EcoBowlers(matches,deliveries);
+        console.log(top10EcoBowlersResult);
       });
   });
 
