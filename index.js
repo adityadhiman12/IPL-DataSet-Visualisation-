@@ -2,7 +2,7 @@ const csv = require("csvtojson");
 var fs = require('file-system');
 const csvFilePath = "./IPL-dataset/matches.csv";
 const csvFilePath_2 = "./IPL-dataset/deliveries.csv";
-const matchesPerYear = require("./ipl/matchesPerYear");
+const matchesPerYear = require("./ipl/matchesPerYear.js");
 const matchesWonPerTeamPerYear=require('./ipl/matchesWonPerTeamPerYear.js');
 
 csv()
@@ -17,7 +17,7 @@ csv()
     console.log(matchesWonPerTeamPerYearResult);
 
 
-    
+
     fs.writeFileSync("./public/data.json",JSON.stringify(matchesPerYearResult));
 
   });
