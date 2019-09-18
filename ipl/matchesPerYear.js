@@ -1,5 +1,3 @@
-
-
 /*First Function*/
 function matchPerYear(matches) {
   if (matches.length === 0) {
